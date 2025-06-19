@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ahmad's Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>مرحباً بك في تطبيقي!</h1>
+        <p>تم تطوير هذا التطبيق بواسطة المبرمج: <span class="developer-name">أحمد قنديل</span></p>
+        <p>استكشف التطبيق الرئيسي:</p>
+        <a href="{{ url_for('prime_checker') }}" class="button">فحص الأعداد الأولية</a>
+        </div>
+</body>
+</html>
